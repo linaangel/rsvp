@@ -1,0 +1,252 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.navbar-inverse {
+    background-color: #f86200;
+    border-color: #f86200;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #000;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+    height: auto;
+}
+
+.centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#save {
+    float: left;
+    padding: 10px;
+}
+
+#rsvp {
+    float: left;
+    padding: 10px;
+}
+
+h1 {
+    color: #f47321;
+    padding: 0 0 5px 0;
+    vertical-align: top;
+}
+
+label,
+input,
+select {
+    padding: 5px;
+}
+
+input,
+select,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#boton {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f47321;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.btn-rsvp {
+    background-color: #f86200;
+    border: 0px;
+    border-radius: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-rsvp:hover {
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-facebook {
+    border: 0px;
+    border-radius: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cont-rsvp {
+    border: 1px solid #b1b1b1;
+}
+
+.input-rsvp {
+    border-radius: 0px;   
+    background-color: #f3f3f5;
+}
+
+#type {
+    border-radius: 0px;   
+    background-color: #f3f3f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.addon-rsvp {
+    background-color: #f86200;
+    color: #ffffff;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.panel-border{
+    border-radius: 0px;
+}
+
+.panel-rsvp{
+    background-color: #f86200;
+    color: #ffffff;
+}
+
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.footer-rsvp {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 4em;
+    padding: 10px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Mobile */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Intermediate */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Wide */
+
+@media only screen and (min-width: 1140px) {}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
